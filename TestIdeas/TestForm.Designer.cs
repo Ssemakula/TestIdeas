@@ -33,6 +33,7 @@
             this.locationTextBox = new System.Windows.Forms.TextBox();
             this.goButton = new System.Windows.Forms.Button();
             this.placeTextBox = new System.Windows.Forms.TextBox();
+            this.resultTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -68,11 +69,20 @@
             this.placeTextBox.Size = new System.Drawing.Size(285, 20);
             this.placeTextBox.TabIndex = 4;
             // 
+            // resultTextBox
+            // 
+            this.resultTextBox.Location = new System.Drawing.Point(183, 109);
+            this.resultTextBox.Multiline = true;
+            this.resultTextBox.Name = "resultTextBox";
+            this.resultTextBox.Size = new System.Drawing.Size(599, 295);
+            this.resultTextBox.TabIndex = 5;
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 149);
+            this.ClientSize = new System.Drawing.Size(953, 504);
+            this.Controls.Add(this.resultTextBox);
             this.Controls.Add(this.placeTextBox);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.locationTextBox);
@@ -91,6 +101,7 @@
         private System.Windows.Forms.TextBox locationTextBox;
         private System.Windows.Forms.Button goButton;
         private System.Windows.Forms.TextBox placeTextBox;
+        private System.Windows.Forms.TextBox resultTextBox;
     }
 }
 
